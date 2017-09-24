@@ -1,633 +1,763 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-   <!--- basic page needs
+   <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Abstract</title>
-	<meta name="description" content="">  
+	<title>Ceevee - Free Responsive HTML5/CSS3 Template</title>
+	<meta name="description" content="">
 	<meta name="author" content="">
 
-   <!-- mobile specific metas
+   <!-- Mobile Specific Metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
- 	<!-- CSS
-   ================================================== -->
-   <link rel="stylesheet" href="css/base.css">
-   <link rel="stylesheet" href="css/vendor.css">  
-   <link rel="stylesheet" href="css/main.css">
-        
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-   <!-- script
+   <!-- Script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
 
-   <!-- favicons
+   <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.png" >
 
 </head>
 
-<body id="top">
+<body>
 
-	<!-- header 
+   <!-- Header
    ================================================== -->
-   <header class="short-header">   
+   <header id="home">
 
-   	<div class="gradient-block"></div>	
+      <nav id="nav-wrap">
 
-   	<div class="row header-content">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-   		<div class="logo">
-	         <a href="index.html">Author</a>
-	      </div>
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
 
-	   	<nav id="main-nav-wrap">
-				<ul class="main-navigation sf-menu">
-					<li class="current"><a href="index.html" title="">Home</a></li>									
-					<li class="has-children">
-						<a href="category.html" title="">Categories</a>
-						<ul class="sub-menu">
-			            <li><a href="category.html">Wordpress</a></li>
-			            <li><a href="category.html">HTML</a></li>
-			            <li><a href="category.html">Photography</a></li>
-			            <li><a href="category.html">UI</a></li>
-			            <li><a href="category.html">Mockups</a></li>
-			            <li><a href="category.html">Branding</a></li>
-			         </ul>
-					</li>
-					<li class="has-children">
-						<a href="single-standard.html" title="">Blog</a>
-						<ul class="sub-menu">
-			            <li><a href="single-video.html">Video Post</a></li>
-			            <li><a href="single-audio.html">Audio Post</a></li>
-			            <li><a href="single-gallery.html">Gallery Post</a></li>
-			            <li><a href="single-standard.html">Standard Post</a></li>
-			         </ul>
-					</li>
-					<li><a href="style-guide.html" title="">Styles</a></li>
-					<li><a href="about.html" title="">About</a></li>	
-					<li><a href="contact.html" title="">Contact</a></li>										
-				</ul>
-			</nav> <!-- end main-nav-wrap -->
+      </nav> <!-- end #nav-wrap -->
 
-			<div class="search-wrap">
-				
-				<form role="search" method="get" class="search-form" action="#">
-					<label>
-						<span class="hide-content">Search for:</span>
-						<input type="search" class="search-field" placeholder="Type Your Keywords" value="" name="s" title="Search for:" autocomplete="off">
-					</label>
-					<input type="submit" class="search-submit" value="Search">
-				</form>
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Alex Wong</h1>
+            <h3> Hi! I BUILD IOS APPS. </h3>
+            <h3>I'm an <span>iOS Developer</span>, <span>Blogger</span> and <span>Life-Long Leaner</span> trying to improve the world with programming, one line at a time. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://www.linkedin.com/in/alwongg"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+         </div>
+      </div>
 
-				<a href="#" id="close-search" class="close-btn">Close</a>
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
 
-			</div> <!-- end search wrap -->	
-
-			<div class="triggers">
-				<a class="search-trigger" href="#"><i class="fa fa-search"></i></a>
-				<a class="menu-toggle" href="#"><span>Menu</span></a>
-			</div> <!-- end triggers -->	
-   		
-   	</div>     		
-   	
-   </header> <!-- end header -->
+   </header> <!-- Header End -->
 
 
-   <!-- masonry
+   <!-- About Section
    ================================================== -->
-   <section id="bricks">
+   <section id="about">
 
-   	<div class="row masonry">
+      <div class="row">
 
-   		<!-- brick-wrapper -->
-         <div class="bricks-wrapper">
+         <div class="three columns">
 
-         	<div class="grid-sizer"></div>
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
 
-         	<div class="brick entry featured-grid animate-this">
-         		<div class="entry-content">
-         			<div id="featured-post-slider" class="flexslider">
-			   			<ul class="slides">
+         </div>
 
-				   			<li>
-				   				<div class="featured-post-slide">
+         <div class="nine columns main-col">
 
-						   			<div class="post-background" style="background-image:url('images/thumbs/featured/featured-1.jpg');"></div>
+            <h2>About Me</h2>
 
-								   	<div class="overlay"></div>			   		
+            <p>Hello World! I was born in Toronto, Canada and currently live in Boston, MA in the United States. I have a Bachelor of Science degree from the University of Waterloo and initially learned Swift from Udacity's iOS Developer Nanodegree Program. I am always learning and strengthening my skills as a developer and programming in different languages such as C, Python, and JavaScript. I look forward to bringing my passion for technology to a full-time position as an iOS Developer and work on meaningful projects with a motivated team.
+            </p>
 
-								   	<div class="post-content">
-								   		<ul class="entry-meta">
-												<li>September 06, 2016</li> 
-												<li><a href="#" >Naruto Uzumaki</a></li>				
-											</ul>	
+            <div class="row">
 
-								   		<h1 class="slide-title"><a href="single-standard.html" title="">Minimalism Never Goes Out of Style</a></h1> 
-								   	</div> 				   					  
-				   			
-				   				</div>
-				   			</li> <!-- /slide -->
+               <div class="columns contact-details">
 
-				   			<li>
-				   				<div class="featured-post-slide">
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Alex Wong</span><br>
+						   <span>Boston, MA 02135 US
+                     </span><br>
+						   <span>(832)446-8912</span><br>
+                     <span>wong_1994@hotmail.com</span>
+					   </p>
 
-						   			<div class="post-background" style="background-image:url('images/thumbs/featured/featured-2.jpg');"></div>
-
-								   	<div class="overlay"></div>			   		
-
-								   	<div class="post-content">
-								   		<ul class="entry-meta">
-												<li>August 29, 2016</li>
-												<li><a href="#">Sasuke Uchiha</a></li>					
-											</ul>	
-
-								   		<h1 class="slide-title"><a href="single-standard.html" title="">Enhancing Your Designs with Negative Space</a></h1>
-						   			</div>		   				   					  
-				   			
-				   				</div>
-				   			</li> <!-- /slide -->
-
-				   			<li>
-				   				<div class="featured-post-slide">
-
-						   			<div class="post-background" style="background-image:url('images/thumbs/featured/featured-3.jpg');;"></div>
-
-								   	<div class="overlay"></div>			   		
-
-								   	<div class="post-content">
-								   		<ul class="entry-meta">
-												<li>August 27, 2016</li>
-												<li><a href="#" class="author">Naruto Uzumaki</a></li>					
-											</ul>	
-
-								   		<h1 class="slide-title"><a href="single-standard.html" title="">Music Album Cover Designs for Inspiration</a></h1>
-						   			</div>
-
-				   				</div>
-				   			</li> <!-- end slide -->
-
-				   		</ul> <!-- end slides -->
-				   	</div> <!-- end featured-post-slider -->        			
-         		</div> <!-- end entry content -->         		
-         	</div>
-
-         	<article class="brick entry format-standard animate-this">
-
-               <div class="entry-thumb">
-                  <a href="single-standard.html" class="thumb-link">
-	                  <img src="images/thumbs/diagonal-building.jpg" alt="building">             
-                  </a>
                </div>
 
-               <div class="entry-text">
-               	<div class="entry-header">
-
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Design</a> 
-               				<a href="#">Photography</a>               				
-               			</span>			
-               		</div>
-
-               		<h1 class="entry-title"><a href="single-standard.html">Just a Standard Format Post.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
+               <div class="columns download">
+                  <p>
+                     <a href="files/resume.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
                </div>
 
-        		</article> <!-- end article -->
+            </div> <!-- end row -->
 
-            <article class="brick entry format-standard animate-this">
+         </div> <!-- end .main-col -->
 
-               <div class="entry-thumb">
-                  <a href="single-standard.html" class="thumb-link">
-	                  <img src="images/thumbs/ferris-wheel.jpg" alt="ferris wheel">                   
-                  </a>
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Udacity Nanodegree</h3>
+                  <p class="info">iOS Developer<span>&bull;</span> <em class="date">August 2017</em></p>
+
+                  <p>
+                  An 8-month period course on iOS Development with Swift. Students are required to build 5 portfolio-worthy projects that showcase fundamental skills to build apps from the ground up. 
+                  
+                  <li>Pitch Perfect: UIKit, AVFoundation</li>
+                  <li>MemeMe: Table and Collection Views</li>
+                  <li>On the Map: Networking, APIs, JSON</li> 
+                  <li>Virtual Tourist: Data persistence and Core Data</li>
+                  <li>Final Project: Build a custom app involving everything you've learned</li>
+                  </p>
+                  <br>
+
                </div>
 
-               <div class="entry-text">
-               	<div class="entry-header">
+            </div> <!-- item end -->
 
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Design</a> 
-               				<a href="#">UI</a>                			
-               			</span>			
-               		</div>
+            <div class="row item">
 
-               		<h1 class="entry-title"><a href="single-standard.html">This Is Another Standard Format Post.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
+               <div class="twelve columns">
+
+                  <h3>University of Waterloo</h3>
+                  <p class="info">Bachelor of Science - General Science <span>&bull;</span> <em class="date">October 2015</em></p>
+
+                  <p>
+                  The program allows students to specialize to a limited extent in a particular subject area or to pursue a broad range of Science subjects. SOS tutor for first-year chemistry students and Grand River Hospital Children's inpatient unit volunteer.
+                  </p>
+
                </div>
-               
-        		</article> <!-- end article -->
 
-            <!-- format audio here -->
-            <article class="brick entry format-audio animate-this">
+            </div> <!-- item end -->
 
-               <div class="entry-thumb">
-                  <a href="single-audio.html" class="thumb-link">
-	                  <img src="images/thumbs/concert.jpg" alt="concert">                      
-                  </a>
+         </div> <!-- main-col end -->
 
-                  <div class="audio-wrap">
-                  	<audio id="player" src="media/AirReview-Landmarks-02-ChasingCorporate.mp3" width="100%" height="42" controls="controls"></audio>                  	
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Colony Music Studio</h3>
+                  <p class="info">Music Teacher <span>&bull;</span> <em class="date">October 2015 - April 2017</em></p>
+                  <p>
+                     <li> Instructed students in piano theory and performance individually and in groups</li>
+                     <li> Met with parents to discuss children's progress and determined priorities for their improvements </li>
+                     <li> Increased student signups and registrations by 10%</li>
+                  </p>
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Chrysler Assembly Plant</h3>
+                  <p class="info">Floor Staff <span>&bull;</span> <em class="date">May 2012 - August 2013</em></p>
+
+                  <p>
+                  <li> Installed doors, fenders and other vehicle parts on the assembly line</li>
+                  <li> Increased productivity and time efficiency by 20% on the line</li>
+                  <li> Observed worker using equipment to verify that equipment is being operated and maintained according to quality assurance standards</li>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>I specialize in programming with Swift for iOS Development but I have been exposed and worked on many projects involving different languages and technologies.
+            </p>
+
+				<div class="bars">
+
+				   <ul class="skills">
+					   <li><span class="bar-expand photoshop"></span><em>C</em></li>
+                  <li><span class="bar-expand illustrator"></span><em>JavaScript</em></li>
+						<li><span class="bar-expand wordpress"></span><em>SQL</em></li>
+						<li><span class="bar-expand css"></span><em>Swift</em></li>
+						<li><span class="bar-expand html5"></span><em>Python</em></li>
+                  <li><span class="bar-expand jquery"></span><em>Kotlin</em></li>
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <a href = "https://www.github.com/alwongg"><h1>Click here for Some of My Projects through GitHub.</h1></a>
+            <a href = "https://roadtoswe.blogspot.com"><h1>Click here to read about my Blog and my blog.</h1></a>
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/coffee.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Coffee</h5>
+                              <p>Illustrration</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
                   </div>
-               </div>
+          		</div> <!-- item end -->
 
-               <div class="entry-text">
-               	<div class="entry-header">
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
 
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Design</a> 
-               				<a href="#">Music</a>                				
-               			</span>			
-               		</div>
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/console.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Console</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
 
-               		<h1 class="entry-title"><a href="single-audio.html">This Is a Audio Format Post.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-               </div>
-               
-        		</article> <!-- /article -->
+                  </div>
+          		</div> <!-- item end -->
 
-         	<article class="brick entry format-quote animate-this" >
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
 
-               <div class="entry-thumb">                  
-	               <blockquote>
-	                 	<p>Good design is making something intelligible and memorable. Great design is making something memorable and meaningful.</p>
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/judah.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Judah</h5>
+                              <p>Webdesign</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
 
-	                 	<cite>Dieter Rams</cite> 
-	               </blockquote>	          
-               </div>   
+                  </div>
+          		</div> <!-- item end -->
 
-        		</article> <!-- end article -->
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
 
-         	<article class="brick entry animate-this">
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/into-the-light.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Into The Light</h5>
+                              <p>Photography</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
 
-               <div class="entry-thumb">
-                  <a href="single-standard.html" class="thumb-link">
-	                  <img src="images/thumbs/shutterbug.jpg" alt="Shutterbug">                      
-                  </a>
-               </div>
+                  </div>
+          		</div> <!-- item end -->
 
-               <div class="entry-text">
-               	<div class="entry-header">
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
 
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Photography</a> 
-               				<a href="#">html</a>                				
-               			</span>			
-               		</div>
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/portfolio/farmerboy.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Farmer Boy</h5>
+                              <p>Branding</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
 
-               		<h1 class="entry-title"><a href="single-standard.html">Photography Skills Can Improve Your Graphic Design.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-               </div>
-               
-        		</article> <!-- end article -->
+                  </div>
+          		</div> <!-- item end -->
 
-            <article class="brick entry animate-this" >
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
 
-               <div class="entry-thumb">
-                  <a href="single-standard.html" class="thumb-link">
-	                  <img src="images/thumbs/usaf-rocket.jpg" alt="USAF rocket">                      
-                  </a>
-               </div>
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/portfolio/girl.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Girl</h5>
+                              <p>Photography</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
 
-               <div class="entry-text">
-               	<div class="entry-header">
+                  </div>
+          		</div> <!-- item end -->
 
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Branding</a> 
-               				<a href="#">Mockup</a>               				
-               			</span>			
-               		</div>
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
 
-               		<h1 class="entry-title"><a href="single-standard.html">The 10 Golden Rules of Clean Simple Design.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-               </div>
-               
-        		</article> <!-- end article -->        	
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/portfolio/origami.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Origami</h5>
+                              <p>Illustrration</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
 
-        		<article class="brick entry format-gallery group animate-this">
+                  </div>
+          		</div> <!-- item end -->
 
-               <div class="entry-thumb">
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
 
-                  <div class="post-slider flexslider">
-							<ul class="slides">
-								<li>
-									<img src="images/thumbs/gallery/work1.jpg"> 
-								</li>
-								<li>
-									<img src="images/thumbs/gallery/work2.jpg"> 
-								</li>
-								<li>
-									<img src="images/thumbs/gallery/work3.jpg"> 
-								</li>
-							</ul>							
-						</div> 
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/portfolio/retrocam.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Retrocam</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
 
-               </div>
+                  </div>
+          		</div>  <!-- item end -->
 
-               <div class="entry-text">
-               	<div class="entry-header">
+            </div> <!-- portfolio-wrapper end -->
 
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Branding</a> 
-               				<a href="#">Wordpress</a>               				
-               			</span>			
-               		</div>
-
-               		<h1 class="entry-title"><a href="single-gallery.html">Workspace Design Trends and Ideas.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-               </div>
-               
-        		</article> <!-- end article -->
-
-        		<article class="brick entry format-link animate-this">
-
-               <div class="entry-thumb">
-                  <div class="link-wrap">
-	                 	<p>Looking for affordable &amp; reliable web hosting? We recommend Dreamhost.</p>
-	                 	<cite>
-	                 		<a target="_blank" href="http://www.dreamhost.com/r.cgi?287326">http://www.dreamhost.com</a>
-	                 	</cite>
-	               </div>	
-               </div>               
-               
-        		</article> <!-- end article -->
+         </div> <!-- twelve columns end -->
 
 
-         	<article class="brick entry animate-this">
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
 
-               <div class="entry-thumb">
-                  <a href="single-standard.html" class="thumb-link">
-	                  <img src="images/thumbs/diagonal-pattern.jpg" alt="Pattern">              
-                  </a>
-               </div>
+         <div id="modal-01" class="popup-modal mfp-hide">
 
-               <div class="entry-text">
-               	<div class="entry-header">
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
 
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Design</a> 
-               				<a href="#">UI</a>                			
-               			</span>			
-               		</div>
+		      <div class="description-box">
+			      <h4>Coffee Cup</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+		      </div>
 
-               		<h1 class="entry-title"><a href="single-standard.html">You Can See Patterns Everywhere.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-               </div>
-               
-        		</article> <!-- end article -->
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
 
-        		<article class="brick entry format-video animate-this">
+	      </div><!-- modal-01 End -->
 
-               <div class="entry-thumb video-image">
-                  <a href="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=F64B39" data-lity>
-	                  <img src="images/thumbs/ottawa-bokeh.jpg" alt="bokeh">                   
-                  </a>
-               </div>
+         <div id="modal-02" class="popup-modal mfp-hide">
 
-               <div class="entry-text">
-               	<div class="entry-header">
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
 
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Design</a> 
-               				<a href="#">Branding</a>               			
-               			</span>			
-               		</div>
+		      <div class="description-box">
+			      <h4>Console</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
+		      </div>
 
-               		<h1 class="entry-title"><a href="single-video.html">This Is a Video Post Format.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-               </div>
-               
-        		</article> <!-- end article -->
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
 
-        		<article class="brick entry animate-this">
+	      </div><!-- modal-02 End -->
 
-               <div class="entry-thumb">
-                  <a href="single-standard.html" class="thumb-link">
-	                  <img src="images/thumbs/lighthouse.jpg" alt="Lighthouse">                      
-                  </a>
-               </div>
+         <div id="modal-03" class="popup-modal mfp-hide">
 
-               <div class="entry-text">
-               	<div class="entry-header">
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
 
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Photography</a> 
-               				<a href="#">Design</a>
-               			</span>			
-               		</div>
+		      <div class="description-box">
+			      <h4>Judah</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
+		      </div>
 
-               		<h1 class="entry-title"><a href="single-standard.html">Breathtaking Photos of Lighthouses.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-               </div>
-               
-        		</article> <!-- end article -->
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
 
-        		<article class="brick entry animate-this">
+	      </div><!-- modal-03 End -->
 
-               <div class="entry-thumb">
-                  <a href="single-standard.html" class="thumb-link">
-	                  <img src="images/thumbs/liberty.jpg" alt="Liberty">                      
-                  </a>
-               </div>
+         <div id="modal-04" class="popup-modal mfp-hide">
 
-               <div class="entry-text">
-               	<div class="entry-header">
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
 
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Branding</a> 
-               				<a href="#">html</a>                	
-               			</span>			
-               		</div>
+		      <div class="description-box">
+			      <h4>Into the Light</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+		      </div>
 
-               		<h1 class="entry-title"><a href="single-standard.html">Designing With Black and White.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-               </div>
-               
-        		</article> <!-- end article -->
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
 
-         </div> <!-- end brick-wrapper --> 
+	      </div><!-- modal-04 End -->
 
-   	</div> <!-- end row -->
+         <div id="modal-05" class="popup-modal mfp-hide">
 
-   	<div class="row">
-   		
-   		<nav class="pagination">
-		      <span class="page-numbers prev inactive">Prev</span>
-		   	<span class="page-numbers current">1</span>
-		   	<a href="#" class="page-numbers">2</a>
-		      <a href="#" class="page-numbers">3</a>
-		      <a href="#" class="page-numbers">4</a>
-		      <a href="#" class="page-numbers">5</a>
-		      <a href="#" class="page-numbers">6</a>
-		      <a href="#" class="page-numbers">7</a>
-		      <a href="#" class="page-numbers">8</a>
-		      <a href="#" class="page-numbers">9</a>
-		   	<a href="#" class="page-numbers next">Next</a>
-	      </nav>
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />
 
-   	</div>
+		      <div class="description-box">
+			      <h4>Farmer Boy</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+		      </div>
 
-   </section> <!-- end bricks -->
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
 
-   
+	      </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Girl</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Origami</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-07 End -->
+
+         <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Retrocam</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Client Testimonials</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+<!--                      <li>
+                        <blockquote>
+                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+                           to do what you believe is great work. And the only way to do great work is to love what you do.
+                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+                           </p>
+                           <cite>Steve Jobs</cite>
+                        </blockquote>
+                     </li> <!-- slide ends --> -->
+
+                     <li>
+                        <blockquote>
+                           <p>As a Director of a services industry, I am pleasured to recommend to you Alex Wong. I have observed his work closely for two years and I am very impressed with his work. I whole heartedly would without any reservation recommend Alex to you, as detailed above, based on my experience interacting with Alex. If you would like further elaboration, feel free to call me at 713-320-4344.
+                           </p>
+                           <cite>Hanny Shanar - Director of Oracle EPM at Perficient</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">After discovering my passion for Software Development, I now see its potential in improving the lives of many, specifically in medicine and education. I've built countless iOS apps with Swift and am diving deeper into building smarter apps with Apple's new CoreML and ARKit frameworks. I’m looking forward to bringing that passion to a full-time role.
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error boy</div>
+               <!-- contact-success -->
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Address and Phone</h4>
+					   <p class="address">
+						   Alex Wong<br>
+						   Boston, MA 02135 US<br>
+						   <span>(832) 446-8912</span>
+					   </p>
+
+				   </div>
+
+<!--                <div class="widget widget_tweets">
+
+                  <h4 class="widget-title">Latest Tweets</h4>
+
+                  <ul id="twitter">
+                     <li>
+                        <span>
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">2 Days Ago</a></b>
+                     </li>
+                     <li>
+                        <span>
+                        After discovering my passion for Software Development, I now see its potential in improving the lives of many, specifically in medicine and education. I've built countless iOS apps with Swift and am diving deeper into building smarter apps with Apple's new CoreML and ARKit frameworks. I’m looking forward to bringing that passion to a full-time role.
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">3 Days Ago</a></b>
+                     </li>
+                  </ul>
+
+		         </div> -->
+
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
    <!-- footer
    ================================================== -->
    <footer>
 
-   	<div class="footer-main">
+      <div class="row">
 
-   		<div class="row">  
+         <div class="twelve columns">
 
-	      	<div class="col-four tab-full mob-full footer-info">            
+            <ul class="social-links">
+               <li><a href="https://www.linkedin.com/in/alwongg"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
 
-	            <h4>About Our Site</h4>
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+            </ul>
 
-	               <p>
-		          	Lorem ipsum Ut velit dolor Ut labore id fugiat in ut fugiat nostrud qui in dolore commodo eu magna Duis cillum dolor officia esse mollit proident Excepteur exercitation nulla. Lorem ipsum In reprehenderit commodo aliqua irure labore.
-		          	</p>
+         </div>
 
-		      </div> <!-- end footer-info -->
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
 
-	      	<div class="col-two tab-1-3 mob-1-2 site-links">
+      </div>
 
-	      		<h4>Site Links</h4>
-
-	      		<ul>
-	      			<li><a href="#">About Us</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Terms</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-					</ul>
-
-	      	</div> <!-- end site-links -->  
-
-	      	<div class="col-two tab-1-3 mob-1-2 social-links">
-
-	      		<h4>Social</h4>
-
-	      		<ul>
-	      			<li><a href="#">Twitter</a></li>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Dribbble</a></li>
-						<li><a href="#">Google+</a></li>
-						<li><a href="#">Instagram</a></li>
-					</ul>
-	      	           	
-	      	</div> <!-- end social links --> 
-
-	      	<div class="col-four tab-1-3 mob-full footer-subscribe">
-
-	      		<h4>Subscribe</h4>
-
-	      		<p>Keep yourself updated. Subscribe to our newsletter.</p>
-
-	      		<div class="subscribe-form">
-	      	
-	      			<form id="mc-form" class="group" novalidate="true">
-
-							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="Type &amp; press enter" required=""> 
-	   		
-			   			<input type="submit" name="subscribe" >
-		   	
-		   				<label for="mc-email" class="subscribe-message"></label>
-			
-						</form>
-
-	      		</div>	      		
-	      	           	
-	      	</div> <!-- end subscribe -->         
-
-	      </div> <!-- end row -->
-
-   	</div> <!-- end footer-main -->
-
-      <div class="footer-bottom">
-      	<div class="row">
-
-      		<div class="col-twelve">
-	      		<div class="copyright">
-		         	<span>© Copyright Abstract 2016</span> 
-		         	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>		         	
-		         </div>
-
-		         <div id="go-top">
-		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon icon-arrow-up"></i></a>
-		         </div>         
-	      	</div>
-
-      	</div> 
-      </div> <!-- end footer-bottom -->  
-
-   </footer>  
-
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
+   </footer> <!-- Footer End-->
 
    <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/jquery.appear.js"></script>
-   <script src="js/main.js"></script>
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
 
 </body>
 
